@@ -1,0 +1,45 @@
+.itemsRow {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.itemsRowCheckboxcontainer {
+  width: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.itemsRowOwner {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
+.itemsRowOwnerContainer {
+  width: 13%;
+}
+.itemsRowImageText {
+  width: 26%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.itemsRowLabel {
+  width: 16%;
+  color: #7888be;
+}
+.itemsRowType {
+  width: 13%;
+  color: #7888be;
+}
+.itemsRowModified {
+  width: 19%;
+  color: #7888be;
+}
+.itemsRowLine {
+  width: 100%;
+  align-content: center;
+  border: none;
+  background-color: #e4e8f3;
+  height: 1px;
+}

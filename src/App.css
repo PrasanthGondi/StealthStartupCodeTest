@@ -1,0 +1,238 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+input[type="checkbox"] {
+  accent-color: #814ee7;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8f9cca;
+  opacity: 1; /* Firefox */
+  letter-spacing: 1px;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8f9cca;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+input:focus {
+  outline: none !important;
+}
+.mainContainer {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+.flex {
+  display: flex;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+.stealthImageText {
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.stealthImage {
+  width: 40px;
+  height: 40px;
+  /* margin-top: 22px; */
+  margin-right: 5px;
+}
+.stealthText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #122c51;
+}
+.sidebarLine {
+  width: 90%;
+  color: #f0f3fc;
+  background-color: #f0f3fc;
+  height: 2px;
+  border: none;
+}
+.sidebarButton {
+  background-color: #f0f3fc;
+  border: none;
+  width: 90%;
+  margin-left: 12px;
+  border-radius: 5px;
+}
+.sidebarButtonImageText {
+  justify-content: center;
+  align-items: center;
+}
+.sidebarButtonImage {
+  width: 35px;
+  height: 30px;
+  /* margin-top: 10px; */
+}
+.sidebarButtonText {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 3px;
+  color: #1f2744;
+}
+.sidebar {
+  width: 15%;
+  background-color: #ffffff;
+  height: 100vh;
+  border-right: 0.5px solid lightgray;
+}
+.mainPage {
+  width: 85%;
+  background-color: #eef3f9;
+}
+.Navbar {
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 8%;
+  border-bottom: 0.5px solid lightgray;
+}
+.NavbarText {
+  font-size: 28px;
+  color: #3e4764;
+  font-weight: 600;
+}
+.uploadButton {
+  padding: 0px 25px;
+  height: 55%;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #814de7;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.uploadButtonImageText {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.uploadIcon {
+  font-weight: 700;
+}
+.uploadText {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.itemsContainer {
+  background-color: #ffffff;
+  width: 75%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+  box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+}
+.itemsText {
+  font-size: 18px;
+  color: #384362;
+  margin-bottom: 30px;
+}
+.itemsHeadingText {
+  font-size: 11px;
+  color: #5e6d9a;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+.icheckbox {
+  width: 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.iname {
+  width: 26%;
+}
+.iowner {
+  width: 15%;
+}
+.ilabels {
+  width: 18%;
+}
+.itype {
+  width: 15%;
+}
+.imodified {
+  width: 17%;
+}
+.iaction {
+  width: 10%;
+}
+.searchBar {
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  width: 25%;
+  height: 100%;
+  border: 1px solid #acb9dc;
+  border-radius: 5px;
+  padding: 2px 5px;
+  padding-left: 20px;
+  color: #8f9cca;
+}
+.searchInput {
+  border: none;
+  background-color: #fafafa;
+  width: 90%;
+  border-style: none;
+  height: 100%;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #8f9cca;
+}
+.searchIcon {
+  font-size: 15px;
+}
+.searchBarContainer {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  height: max-content;
+  height: 4%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.categoriesTextIcon {
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.CategoriesItemsSplitter {
+  width: 90%;
+  justify-content: space-between;
+}
+.CategoriesContainer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.categoriesText {
+  margin-right: 10px;
+  color: #313d5c;
+  font-weight: 600;
+}
+.categoriesIcon {
+}
+.listsContainer {
+}

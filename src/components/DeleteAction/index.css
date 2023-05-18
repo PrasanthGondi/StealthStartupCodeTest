@@ -1,0 +1,138 @@
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.actionIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editIcon {
+  color: #cad0e4;
+  margin-right: 7px;
+  font-size: 15px;
+}
+.deleteIcon {
+  color: #7888be;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.popuptext {
+  height: 50px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.popupContainerTop {
+  height: 45%;
+  background-color: #f2f2f7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.popupContainerBottom {
+  height: 55%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: white;
+  justify-content: space-between;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.popupDeleteIcon {
+  color: #7b8bbf;
+  font-size: 10px;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+.popupRemove {
+  font-size: 8px;
+  font-weight: 600;
+  color: #7b8bbf;
+}
+.popupIcons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.popupSure {
+  color: #7b8bbf;
+  font-size: 10px;
+}
+.popupTick,
+.popupWrong {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+.popupTick {
+  background-color: #2fc392;
+  margin-left: 5px;
+}
+.popupWrong {
+  background-color: #f43f5e;
+}
+.popuptext {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+  box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+}

@@ -1,0 +1,26 @@
+.CatergoryListItems {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.CategoryListUL {
+  list-style: none;
+  color: #404965;
+  margin-top: 0;
+  padding-top: 0;
+}
+.CatergoryListItemsHeading {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+.CatergoryListItemsCheckbox {
+  margin-right: 5px;
+}
+.CatergoryListItemsLists {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
