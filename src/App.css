@@ -5,6 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  scrollbar-width: thin;
 }
 input[type="checkbox"] {
   accent-color: #814ee7;
@@ -139,6 +140,8 @@ input:focus {
   -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
   -moz-box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
   box-shadow: 0px 0px 6px 0px rgba(189, 185, 189, 1);
+  max-height: 600px;
+  overflow-y: auto;
 }
 .itemsText {
   font-size: 18px;
@@ -231,8 +234,4 @@ input:focus {
   margin-right: 10px;
   color: #313d5c;
   font-weight: 600;
-}
-.categoriesIcon {
-}
-.listsContainer {
 }

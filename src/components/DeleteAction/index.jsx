@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { TiTick } from "react-icons/ti";

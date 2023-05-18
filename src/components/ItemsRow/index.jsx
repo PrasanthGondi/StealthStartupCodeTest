@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./index.css";
 import ImageText from "../ImageText";
 import DeleteAction from "../DeleteAction";
@@ -9,7 +10,7 @@ const ItemsRow = ({
   Owner,
   Name,
   ModifiedAt,
-  key,
+  id,
 }) => {
   //dateFormatter Code Begins
   const dateString = ModifiedAt;
@@ -55,7 +56,9 @@ const ItemsRow = ({
           <input type="checkbox" className="itemsRowCheckbox" />
         </div>
         <div className="itemsRowImageText">
-          <ImageText imageUrl={file} TextContent={Name} Type={Type} Link="" />
+          <div className="itemsRowImageTextIT">
+            <ImageText imageUrl={file} TextContent={Name} Type={Type} Link="" />
+          </div>
         </div>
         <div className="itemsRowOwnerContainer">
           <img src={Owner} className="itemsRowOwner" />
@@ -63,7 +66,7 @@ const ItemsRow = ({
         <p className="itemsRowLabel">Label 1</p>
         <p className="itemsRowType">{Type}</p>
         <p className="itemsRowModified">{finalFormat}</p>
-        <DeleteAction className="itemsRowDeleteAction" id={key} />
+        <DeleteAction className="itemsRowDeleteAction" id={id} />
       </div>
       <hr className="itemsRowLine" />
     </div>

@@ -5,11 +5,12 @@ import CategoryList from "./components/CategoryList";
 import ItemsRow from "./components/ItemsRow";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import SearchBar from "./components/SearchBar";
+import { AiOutlineSearch } from "react-icons/ai";
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [items, setItems] = useState([]);
+  const [searchKeyword, setSearchKeyword] = useState("");
 
   const itemsURL = "https://646312614dca1a661353d0ee.mockapi.io/api/Files";
   const categoriesURL =
@@ -33,7 +34,17 @@ function App() {
       <Sidebar />
       <div className="mainPage">
         <Navbar />
-        <SearchBar />
+        <div className="searchBarContainer">
+          <div className="searchBar flex">
+            <AiOutlineSearch className="searchIcon" />
+            <input
+              type="search"
+              placeholder="Search by name"
+              className="searchInput"
+              onChange={(e) => setSearchKeyword(e.target.value)}
+            />
+          </div>
+        </div>
         <div className="flex CategoriesItemsSplitter">
           <div className="CategoriesContainer">
             <div className="flex categoriesTextIcon">
@@ -76,17 +87,20 @@ function App() {
               </div>
             </div>
             <hr />
-            {items.map((everyItem) => (
-              <ItemsRow
-                preview_image={everyItem.preview_image}
-                file={everyItem.file}
-                Type={everyItem.Type}
-                Owner={everyItem.Owner}
-                Name={everyItem.Name}
-                ModifiedAt={everyItem.ModifietAt}
-                key={everyItem.id}
-              />
-            ))}
+            {items
+              .filter((every) => every.Name.includes(searchKeyword))
+              .map((everyItem) => (
+                <ItemsRow
+                  preview_image={everyItem.preview_image}
+                  file={everyItem.file}
+                  Type={everyItem.Type}
+                  Owner={everyItem.Owner}
+                  Name={everyItem.Name}
+                  ModifiedAt={everyItem.ModifietAt}
+                  key={everyItem.id}
+                  id={everyItem.id}
+                />
+              ))}
           </div>
         </div>
       </div>

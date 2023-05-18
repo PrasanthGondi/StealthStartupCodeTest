@@ -19,10 +19,14 @@
 }
 .itemsRowImageText {
   width: 26%;
+}
+.itemsRowImageTextIT {
+  width: 90%;
+  overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
 }
 .itemsRowLabel {
   width: 16%;
